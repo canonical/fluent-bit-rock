@@ -74,7 +74,7 @@ def test_integration_fluent_bit(session_instance: harness.Instance):
     #     input=Path(manifest).read_bytes(),
     # )
     #
-    util.stubbornly(retries=3, delay_s=1).on(session_instance).exec(
+    util.stubbornly(retries=5, delay_s=5).on(session_instance).exec(
         [
             "k8s",
             "kubectl",
