@@ -116,3 +116,4 @@ parts:
       dpkg -x ./libldap-2.4-2_2.4.49+dfsg-2ubuntu1.10_amd64.deb ${CRAFT_PART_INSTALL}/
       ##test
       ##test2
+      ##test3
