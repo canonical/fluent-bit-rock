@@ -115,3 +115,4 @@ parts:
       wget http://security.ubuntu.com/ubuntu/pool/main/o/openldap/libldap-2.4-2_2.4.49+dfsg-2ubuntu1.10_amd64.deb
       dpkg -x ./libldap-2.4-2_2.4.49+dfsg-2ubuntu1.10_amd64.deb ${CRAFT_PART_INSTALL}/
       ##test
+      ##test2
