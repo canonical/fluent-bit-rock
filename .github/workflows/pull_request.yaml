@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+      - story/KU-1195/test-branch
 
 jobs:
   build-and-push-arch-specifics:
