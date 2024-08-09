@@ -9,7 +9,7 @@ on:
 jobs:
   build-and-push-arch-specifics:
     name: Build Rocks and Push Arch Specific Images
-    uses: canonical/k8s-workflows/.github/workflows/build_rocks.yaml@main
+    uses: canonical/k8s-workflows/.github/workflows/build_rocks.yaml@story/KU-1195/fix-when-image-not-present
     with:
       owner: ${{ github.repository_owner }}
       trivy-image-config: "trivy.yaml"
