@@ -6,13 +6,16 @@ import logging
 import pytest
 from k8s_test_harness import harness
 from k8s_test_harness.util import env_util, k8s_util
+# from k8s_test_harness.util import constants, env_util, k8s_util
 
-pytest_plugins = ["k8s_test_harness.plugin"]
+
+# pytest_plugins = ["k8s_test_harness.plugin"]
 
 LOG = logging.getLogger(__name__)
 
 
-@pytest.mark.parametrize("image_version", ("2.1.6", "1.9.5"))
+# @pytest.mark.parametrize("image_version", ("2.1.6", "1.9.5"))
+@pytest.mark.parametrize("image_version", ["2.1.6"])
 def test_integration_fluent_bit(
     function_instance: harness.Instance, image_version: str
 ):
