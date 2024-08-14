@@ -4,8 +4,9 @@ description: This ROCK is a drop in replacement for the fluent/fluent-bit image.
 version: "2.1.6"
 license: Apache-2.0
 
-base: bare
-build-base: ubuntu@22.04
+#base: bare
+base: ubuntu@22.04
+#build-base: ubuntu@22.04
 platforms:
   amd64:
   arm64:
@@ -55,6 +56,7 @@ parts:
       - libffi7
       - liblzma5
       - libyaml-0-2
+      - build-essential
     build-packages:
       - build-essential
       - curl
