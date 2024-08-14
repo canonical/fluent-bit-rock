@@ -56,7 +56,6 @@ parts:
       - libffi7
       - liblzma5
       - libyaml-0-2
-      - build-essential
     build-packages:
       - build-essential
       - curl
