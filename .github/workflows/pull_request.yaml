@@ -26,7 +26,7 @@ jobs:
     with:
       rock-metas: ${{ needs.build-and-push-arch-specifics.outputs.rock-metas }}
   scan-images:
-    uses: canonical/k8s-workflows/.github/workflows/scan_images.yaml@main
+    uses: canonical/k8s-workflows/.github/workflows/scan_images.yaml@KU-1194/added-jira-connection-for-image-scan
     needs: [build-and-push-arch-specifics]
     secrets: inherit
     with:
