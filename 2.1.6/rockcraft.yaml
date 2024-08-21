@@ -58,7 +58,6 @@ parts:
       - libyaml-0-2
     build-packages:
       - build-essential
-#      - build-essential
       - curl
       - ca-certificates
       - cmake
